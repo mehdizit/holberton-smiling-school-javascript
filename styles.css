@@ -1,0 +1,168 @@
+
+/* Reset / Normalize
+  ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+/* Variables
+  ============================= */
+
+  :root {
+    --header-text-color: #FFFFFF;
+    --purple-color: #C271FF;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+/* GLOBAL */
+
+button:hover, button:active {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn {
+    width: 162px;
+    height: 44px;
+    background: var(--purple-color);
+    font-size: 14px;
+}
+
+/* Header
+  ============================= */
+
+header {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/pic_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.pricing {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/pic_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.login {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/pic_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.header {
+    color: var(--header-text-color);
+}
+
+/* NAV */
+
+.menu li a {
+    font-size: 12px;
+    color: var(--header-text-color);
+}
+
+a:hover, a:active {
+    color: var(--purple-color) !important;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+}
+
+/* CONTENT */
+
+.content .register h1 {
+    font-size: 100px;
+}
+
+@media (max-width: 768px) {
+    .content .register h1 {
+        font-size: 61px;
+    }
+}
+
+.content .register ul li {
+    font-size: 16px;
+}
+
+/* PROS */
+h2 span {
+    color: var(--purple-color);
+}
+
+.pros-card-container .pros-card {
+    height: 300px;
+}
+
+.pros-card small, .pros-card p {
+    width: 150px;
+}
+
+.pros-card-container img {
+    height: 150px;
+    width: 150px;
+}
+
+/* MAIN
+  ============================= */
+
+/* SECTION CAROUSEL */
+
+main .carousel:first-child {
+    background: var(--purple-color);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("/images/arrow_white_left.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("/images/arrow_white_right.png");
+}
+
+/* PRICING */
+
+/* HIDE PRICE */
+
+@media (max-width: 576px) {
+    .hide-price {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .tit {
+        display: none !important;
+    }
+}
+
+/* LOADER */
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
